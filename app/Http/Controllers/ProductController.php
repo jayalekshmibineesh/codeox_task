@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+//use Illuninate\Support\Facades\FIle;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -30,28 +32,24 @@ class ProductController extends Controller
    $data['status']=0;
    Product::create($data);
    return redirect()->route('product_registration')->with('success',' Product Registered Successfully');
-     
-  }
+   }
+ 
   public function edit($id)
   {
      $data=Product::find($id);
      return view('adminedit_products',compact('data'));
   }
-
-    public function product_update(Request $request,$id)
+   public function product_update(Request $request,$id)
   {
     $data=Product::find($id);
-    
     $request->validate([
-    
-    'image'=>'mimes:jpg,jpeg,jif,png|max:2048'
-     
 
+      'image'=>'mimes:jpg,jpeg,jif,png|max:2048'
    ]);
    $data->product_name=$request->input('product_name');
    $data->product_details=$request->input('product_details');
    $data->product_price=$request->input('product_price');
-  
+   
    if($request->hasfile('image'))
    {
     $path='asset/storage/images/'.$data['image'];
@@ -69,4 +67,12 @@ class ProductController extends Controller
     $data->update();
     return redirect()->route('adminview_products')->with('success','updated succesfully');
   }
+  public function update_status($id)
+  {
+   DB::table('products')-> where('id',$id)->update([ 'status'=> 1]);
+  
+   return redirect()->route('adminview_products')->with('success',' status updated succesfully');
 }
+}
+
+

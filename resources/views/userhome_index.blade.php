@@ -13,21 +13,21 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="home/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{{ asset('home/css/bootstrap.min.css') }}">
       <!-- style css -->
-      <link rel="stylesheet" href="home/css/style.css">
+      <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="home/css/responsive.css">
+      <link rel="stylesheet" href="{{ asset('home/css/responsive.css') }}">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="{{ asset('images/fevicon.png" type="image/gif') }}" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="home/css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{{ asset('home/css/jquery.mCustomScrollbar.min.css') }}">
       <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="{{ asset('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') }}">
       <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="home/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="home/css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="{{ asset('home/css/owl.carousel.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('home/css/owl.theme.default.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css') }}" media="screen">
    </head>
    <body>
       <!-- header section start -->
@@ -62,8 +62,8 @@
                   <form class="form-inline my-2 my-lg-0">
                      <div class="search_icon">
                         <ul>
-                           <li><a href="#"><img src="images/search-icon.png"></a></li>
-                           <li><a href="#"><img src="images/user-icon.png"></a></li>
+                           <li><a href="#"><img src="{{ asset('images/search-icon.png') }}"></a></li>
+                           <li><a href="#"><img src="{{asset('images/user-icon.png') }}"></a></li>
                         </ul>
                      </div>
                   </form>
@@ -98,16 +98,16 @@
       <!-- banner section end -->
    
       <!-- Javascript files-->
-      <script src="home/js/jquery.min.js"></script>
-      <script src="home/js/popper.min.js"></script>
-      <script src="home/js/bootstrap.bundle.min.js"></script>
-      <script src="home/js/jquery-3.0.0.min.js"></script>
-      <script src="home/js/plugin.js"></script>
+      <script src="{{ asset('home/js/jquery.min.js') }}"></script>
+      <script src="{{asset('home/js/popper.min.js') }}"></script>
+      <script src="{{ asset('home/js/bootstrap.bundle.min.js') }}"></script>
+      <script src="{{ asset('home/js/jquery-3.0.0.min.js') }}"></script>
+      <script src="{{ asset('home/js/plugin.js') }}"></script>
       <!-- sidebar -->
-      <script src="home/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="home/home/js/custom.js"></script>
+      <script src="{{ asset('home/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+      <script src="{{ asset('home/home/js/custom.js') }}"></script>
       <!-- javascript --> 
-      <script src="home/js/owl.carousel.js"></script>
-      <script src="home/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="{{ asset('home/js/owl.carousel.js') }} "></script>
+      <script src="{{ asset('home/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js') }}"></script>
    </body>
 </html>
