@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+
 
 class ProductController extends Controller
 {
@@ -69,7 +71,7 @@ class ProductController extends Controller
   }
   public function update_status($id)
   {
-   DB::table('products')-> where('id',$id)->update([ 'status'=> 1]);
+   DB::table('products')-> where('product_id',$id)->update([ 'status'=> 1]);
   
    return redirect()->route('adminview_products')->with('success',' status updated succesfully');
 }

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('product_details');
             $table->string('product_price');
-            $table->string('status');
+            $table->tinyInteger('status');
             $table->timestamps();
         });
     }

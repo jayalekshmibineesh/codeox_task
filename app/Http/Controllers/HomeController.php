@@ -76,4 +76,9 @@ public function customer_home()
     $product=Product::all();
     return view('adminview_products',compact('product'));
   }
+  public function customer_view()
+  {
+    $approvedProducts=Product::where('status', 1)->get();
+    return view('customer_view',compact('approvedProducts'));
+  }
 }

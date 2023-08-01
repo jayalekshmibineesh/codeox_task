@@ -41,16 +41,16 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#">About</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="design.html">OurDesign</a>
+                        <a class="nav-link" href="#">OurDesign</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
+                        <a class="nav-link" href="#">Shop</a>
 
                      </li>
                      <li class="nav-item">
@@ -265,7 +265,7 @@
                                  <p class="chair_text">Price $100</p>
                                  <div class="buy_bt"><a href="#">Buy Now</a></div>
                               </div>
-                           </div>
+                           </div> 
                         </div>
                      </div>
                   </div>

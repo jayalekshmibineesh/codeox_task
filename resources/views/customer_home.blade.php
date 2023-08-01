@@ -1,1 +1,3 @@
-<h2>hai</h2>
+@extends('customer_index')
+@section('content')
+@endsection

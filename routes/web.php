@@ -40,4 +40,5 @@ Route::get('/adminview_products',[HomeController::class,'adminview_products'])->
 Route::get('/deleteproduct/{id}',[ProductController::class,'deleteproduct'])->name('deleteproduct');
 Route::get('/edit/{id}',[ProductController::class,'edit'])->name('edit');
 Route::post('/product_update/{id}',[ProductController::class,'product_update'])->name('product_update');
-Route::post('/update_status/{id}',[ProductController::class,'update_status'])->name('update_status');
+Route::get('/update_status/{id}',[ProductController::class,'update_status'])->name('update_status');
+Route::get('/customer_view',[HomeController::class,'customer_view'])->name('customer_view');

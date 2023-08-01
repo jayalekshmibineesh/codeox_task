@@ -23,10 +23,10 @@
                     <td>{{ $products->product_price }}</td>
                     <td>{{ $products->product_details }}</td>
                     <td>
-    @if($products->status ==0 )
-        <a class="btn btn-primary" href="{{ route('update_status',$products->product_id) }}">product ready</a>
-    @elseif($products->status ==1)
-    <a class="btn btn-danger" href="">Product ready to sell</a>
+    @if($products->status==0 )
+        <a class="btn btn-primary" href="{{ route('update_status',$products->product_id) }}">approve</a>
+    @elseif($products->status==1)
+    <a class="btn btn-danger" href="">approved</a>
 
     @endif
 </td>
